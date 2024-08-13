@@ -7,10 +7,10 @@ function ColorForm(props) {
     const dispatch =  useDispatch()
     return (
         <div>
-            <input onChange={(e)=>{
+            <input className='h-10 px-3 border border-cyan-900 rounded-md mx-10' onChange={(e)=>{
                 setColor(e.target.value)
             }} type="text" placeholder='ex: blue' value={color}/>
-            <button onClick={()=>dispatch(changeColor(color))}>Change color</button>
+            <button className='bg-cyan-900 text-white px-3 rounded-md h-10'  onClick={()=>dispatch(changeColor(color))}>Change color</button>
         </div>
     );
 }

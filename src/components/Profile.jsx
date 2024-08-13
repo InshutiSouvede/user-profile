@@ -7,10 +7,10 @@ function Profile() {
     
     return (
         <div style={{color:theme}}>
-            <h1 className="font-bold">User profile</h1>
-            <p>Name {user.name} </p>
-            <p>Email {user.email}</p>
-            <p>Age {user.age}</p>
+            <h1 className="font-bold text-3xl">User profile</h1>
+            <p>Name: {user.name} </p>
+            <p>Email: {user.email}</p>
+            <p>Age: {user.age}</p>
         </div>
     );
 }

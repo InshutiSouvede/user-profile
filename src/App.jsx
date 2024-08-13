@@ -14,7 +14,7 @@ const store = configureStore({
 export default function App() {
   return (
     <Provider store ={store}>
-    <div className="text-center text-xl">
+    <div className="text-center text-xl text-cyan-900 flex flex-col gap-10">
       <Profile />
       <Login />
       <ColorForm />
