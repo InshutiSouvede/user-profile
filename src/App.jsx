@@ -11,7 +11,7 @@ const store = configureStore({
 export default function App() {
   return (
     <Provider store ={store}>
-    <div className="text-center">
+    <div className="text-center text-xl">
       <Profile />
       <Login />
     </div>
