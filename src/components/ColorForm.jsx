@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { changeColor } from '../features/theme';
 
 function ColorForm(props) {
+    const [color, setColor] = useState("")
+    const dispatch =  useDispatch()
     return (
         <div>
-            <input type="text" placeholder='ex: blue'/>
-            <button>Change color</button>
+            <input onChange={(e)=>{
+                setColor(e.target.value)
+            }} type="text" placeholder='ex: blue' value={color}/>
+            <button onClick={()=>dispatch(changeColor(color))}>Change color</button>
         </div>
     );
 }

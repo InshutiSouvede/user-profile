@@ -8,7 +8,7 @@ import themeReducer from "./features/theme";
 const store = configureStore({
   reducer:{
     user:userReducer,
-    them: themeReducer
+    theme: themeReducer
   }
 })
 export default function App() {

@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 const themeSlice = createSlice({
     name:"theme",
-    initialState:{value:"green"},
+    initialState:{value:"cyan"},
     reducers:{
         changeColor:(state,action)=>{
-            state = action.payload
+            console.log("Changing color to ",action.payload)
+            state.value = action.payload
         }
     }
 })
